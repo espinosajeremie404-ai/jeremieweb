@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+header{
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+section{
+    min-height:100vh;
+    padding:80px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+ul{
+    margin-left:20px;
+    line-height:2;
+}
+
+.profile{
+    display:block;
+    width:200px;
+    height:200px;
+    margin:20px auto;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Website</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="card">
+        <h2>Welcome!</h2>
+        <p>Hello! Welcome to my personal website. Feel free to learn more about me by exploring the sections below.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+
+        <!-- Profile Image -->
+        <img src="profile.jpg" alt="My Profile Picture" class="profile">
+
+        <p>
+            Hello! My name is <strong>Jeremie Espinosa</strong>. I enjoy learning web development,
+            programming, and exploring new technology. I am passionate about improving my
+            skills and creating websites.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+        </ul>
+    </div>
+</section>
+
+<section id="hobbies">
+    <div class="card">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Playing Games</li>
+            <li>Watching Movies</li>
+            <li>Listening to Music</li>
+            <li>Reading Books</li>
+            <li>Traveling</li>
+        </ul>
+    </div>
+</section>
+
+<section id="video">
+    <div class="card">
+        <h2>My Video</h2>
+
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <p><strong>Email:</strong> espinosajeremie404@gmail.com</p>
+        <p><strong>Phone:</strong> +63 0356779234</p>
+        <p><strong>Facebook:</strong> facebook.com/jeremieii</p>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Personal Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
